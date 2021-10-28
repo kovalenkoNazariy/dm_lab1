@@ -14,6 +14,7 @@ namespace vec {
 
             if (!foundInB)
                 out.push_back(a);
+
         }
 
         for (int b : B) {
@@ -23,7 +24,6 @@ namespace vec {
 
     void _and(const vec_t &A, const vec_t &B, vec_t &out) {
         for (int a : A) {
-
             for (int b : B) {
                 if (a == b) {
                     out.push_back(a);
@@ -64,8 +64,8 @@ namespace vec {
             for (int b : B) {
                 if (a == b) {
                     foundInB = true;
+                    break;
                 }
-                break;
             }
 
             if (!foundInB)
@@ -78,8 +78,8 @@ namespace vec {
             for (int a : A) {
                 if (a == b) {
                     foundInA = true;
+                    break;
                 }
-                break;
             }
 
             if (!foundInA)

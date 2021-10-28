@@ -29,7 +29,7 @@ int main()
     std::cin >> op;
     
     if (op == 'Q') {
-        std::cout << "\nEnter bitwise operation type (n, o, a, x): ";
+        std::cout << "\nEnter bitwise operation type (o, p, r, s): ";
         std::cin >> op;
         executeBitwiseOperation(A, B, op);
         return 0;
@@ -50,17 +50,27 @@ void executeBitwiseOperation(const vec_t &A, const vec_t &B, char op) {
     std::cout << ".\n";
 
     switch (op) {
-    case'n':
-        vec::printBitwise(~bitsA);
-        break;
     case'o':
         vec::printBitwise(bitsA | bitsB);
         break;
-    case'a':
+
+    case'p':
         vec::printBitwise(bitsA & bitsB);
         break;
-    case'x':
-        vec::printBitwise(bitsA ^ bitsB);
+
+    case'r':
+        vec::printBitwise(bitsA & ~bitsB);
+        std::cout << ", ";
+        vec::printBitwise(bitsB & ~bitsA);
+        std::cout << ".\n";
+        break;
+
+    case's':
+        vec::printBitwise((bitsA | bitsB) & ~(bitsA & bitsB));
+        break;
+
+    default:
+        std::cout << "Operation unknown / not implemented.";
         break;
     }
 }
@@ -80,6 +90,9 @@ void executeOperation(const vec_t &A, const vec_t &B, char op) {
     case'm':
         vec::minus(A, B, out);
         std::cout << out;
+        out.resize(0);
+        vec::minus(B, A, out);
+        std::cout << ", " << out << ".\n";
         break;
     case'd':
         vec::dopovnennja(A, out);
