@@ -26,14 +26,12 @@ std::ostream &operator<<(std::ostream &out, const vecVec_t &vecVec) {
         std::cout << vecVec[i] << ", ";
     }
     std::cout << vecVec[vecVec.size() - 1] << "}";
+
     return out;
-
-
 }
 
 namespace vec {
     void printBitwise(const bitwise_vec_t vec) {
-        std::bitset<8> bits{ vec };
-        std::cout << bits;
+        std::cout << static_cast<std::bitset<8>>(vec);
     }
 }
