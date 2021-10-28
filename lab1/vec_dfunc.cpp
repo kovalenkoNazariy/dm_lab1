@@ -3,7 +3,6 @@
 #include "vec_dmath.h"
 
 namespace vec {
-	//мне крайне лень это делать
 	bool isEqual(vec_t A, vec_t B) {
 		std::sort(A.begin(), A.end());
 		std::sort(B.begin(), B.end());
