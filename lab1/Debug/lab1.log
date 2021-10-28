@@ -1,0 +1,5 @@
+﻿  vec_dio.cpp
+C:\KPI_uni\DM_labs\lab1\lab1\vec_dio.cpp(6,23): warning C4018: '<': signed/unsigned mismatch
+C:\KPI_uni\DM_labs\lab1\lab1\vec_dio.cpp(15,23): warning C4018: '<': signed/unsigned mismatch
+C:\KPI_uni\DM_labs\lab1\lab1\vec_dio.cpp(25,23): warning C4018: '<': signed/unsigned mismatch
+  lab1.vcxproj -> C:\KPI_uni\DM_labs\lab1\Debug\lab1.exe

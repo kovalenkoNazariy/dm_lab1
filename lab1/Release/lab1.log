@@ -1,0 +1,15 @@
+﻿  lab1.cpp
+  vec_dfunc.cpp
+C:\KPI_uni\DM_labs\lab1\lab1\vec_dfunc.cpp(15,22): warning C4018: '<=': signed/unsigned mismatch
+C:\KPI_uni\DM_labs\lab1\lab1\vec_dfunc.cpp(18,23): warning C4018: '<': signed/unsigned mismatch
+  vec_dio.cpp
+C:\KPI_uni\DM_labs\lab1\lab1\vec_dio.cpp(5,23): warning C4018: '<': signed/unsigned mismatch
+C:\KPI_uni\DM_labs\lab1\lab1\vec_dio.cpp(14,23): warning C4018: '<': signed/unsigned mismatch
+C:\KPI_uni\DM_labs\lab1\lab1\vec_dio.cpp(24,23): warning C4018: '<': signed/unsigned mismatch
+  vec_dmath.cpp
+  Generating code
+  208 of 294 functions (70.7%) were compiled, the rest were copied from previous compilation.
+    26 functions were new in current compilation
+    19 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  lab1.vcxproj -> C:\KPI_uni\DM_labs\lab1\Release\lab1.exe
