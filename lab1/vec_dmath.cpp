@@ -1,4 +1,5 @@
 #include "vec_dmath.h"
+
 namespace vec {
     void _or(const vec_t &A, const vec_t &B, vec_t &out) {
         for (int a : A) {

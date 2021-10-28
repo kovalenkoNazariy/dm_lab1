@@ -27,7 +27,7 @@ int main()
     std::cout << "\nPlease enter an operation to execute (math: o, a, m, d, s, x), (func: i, c) "
          << "or enter \'Q\' to skip to bitwise operations: ";
     std::cin >> op;
-
+    
     if (op == 'Q') {
         std::cout << "\nEnter bitwise operation type (n, o, a, x): ";
         std::cin >> op;
@@ -44,7 +44,6 @@ void executeBitwiseOperation(const vec_t &A, const vec_t &B, char op) {
     bitwise_vec_t bitsA{ vec::getBitwiseArray(A) };
     bitwise_vec_t bitsB{ vec::getBitwiseArray(B) };
     std::cout << "The arrays have been reformed into bitwise ones: ";
-    //no bitwise output because i've already spent too much time on this
     vec::printBitwise(bitsA);
     std::cout << ", ";
     vec::printBitwise(bitsB);
