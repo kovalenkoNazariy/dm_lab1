@@ -12,10 +12,10 @@ namespace vec {
 	}
 
 	bool contains(const vec_t &A, const vec_t &B) {
-		for (int i{ 0 }; i <= A.size() - B.size(); ++i) {
+		for (size_t i{ 0 }; i <= A.size() - B.size(); ++i) {
 			bool noErrors{ true }; //нет несовпадений
 
-			for (int j{ i }; j < i + B.size(); ++j) {
+			for (size_t j{ i }; j < i + B.size(); ++j) {
 				if (A[j] != B[j - i]) {
 					noErrors = false;
 					break;
